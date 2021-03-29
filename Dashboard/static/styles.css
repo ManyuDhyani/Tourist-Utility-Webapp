@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+@media only screen and (min-width: 767px){
+    #sideform{
+        min-height: 100vh;
+    }
+}
+
+.body{
+    font-family: 'poppins', sans-serif;
+}
+
+#sideform{
+    background: linear-gradient(60deg, #fff, #3fb7b7);
+}
+
+.btn, .city-input{
+    border-radius: 20px;
+}
+
+.card{
+    border: 2px solid black;
+    border-bottom: 4px solid #6553ee;
+}
+
+.style{
+    background-color: #f6f6f6;
+}
+
+.style h5{
+    font-size: 16px;
+}
+
+.style p{
+    font-size: 14px;
+}
+
+.head h1{
+    background-color: #f6f6f6;
+}
+
+.button a{
+    font-weight: 300;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button a:hover,
+.button a:focus{
+    background: #000 !important;
+    color: #fff, #114c7d;
+}
+
+.news-bg{
+    background-color: #f6f6f6;
+}
+
+.breadcrumb-item a{
+    margin: 4px 2px;
+    padding: 16px 32px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    text-decoration: none;
+    background: #000 !important;
+    color: #fff;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+#sideform p{
+    font-size: 1.2rem;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

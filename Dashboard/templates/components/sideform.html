@@ -1,0 +1,14 @@
+<div class="py-4">
+    <p>What is Weather Like ?</p>
+    <div>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.city }}
+            <button class="btn btn-warning" name="query" type="submit" value="weather">Weather</button>
+            <button class="btn btn-warning" name="query" type="submit" value="news">News</button>
+            <button class="btn btn-warning" name="query" type="submit" value="images">Images</button>
+            <a class="btn btn-warning" type="button" href="{% url 'history' %}">History</a>
+        </form>
+    </div>
+</div>
+
