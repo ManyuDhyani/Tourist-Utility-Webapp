@@ -1,25 +1,19 @@
 {% if news_data_list %}
-<div class="container col-lg-12 my-5">
-    <div class="row mx-auto">
-            {% for news_data in news_data_list %}
-                <div class="card my-2 mx-auto" style="width: 18rem;">
-                   <img class="card-img-top my-1" src="{{ news_data.image }}" alt="Card image cap">
-                    <div class="card-body style">
-                        <h5 class="card-title fw-bold">{{ news_data.title }}</h5>
-                        <p class="card-text">{{ news_data.description | truncatechars:40 }}</p>
-                        <div class="button">
-                            <a href="{{ news_data.url }}" class="btn btn-primary" style="background:#6553ee; border: none;" role="button">Read News</a>
+    <div class="container col-lg-12 my-5">
+        <div class="row mx-auto">
+                {% for news_data in news_data_list %}
+                    <div class="card my-2 mx-auto" style="width: 18rem;">
+                    <img class="card-img-top my-1" src="{{ news_data.image }}" alt="Card image cap">
+                        <div class="card-body style">
+                            <h5 class="card-title fw-bold">{{ news_data.title }}</h5>
+                            <p class="card-text">{{ news_data.description | truncatechars:40 }}</p>
+                            <div class="button">
+                                <a href="{{ news_data.url }}" class="btn btn-primary" style="background:#6553ee; border: none;" role="button">Read News</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-           {% endfor %}
+            {% endfor %}
+        </div>
     </div>
-</div>
-{% else %}
-<div class="card mx-auto my-5" style="width: 30rem;" id="dashboard-card">
-    <div class="card-body">
-        <h3>Data Not Found</h3>
-    </div>
-</div>
 {% endif %}
 

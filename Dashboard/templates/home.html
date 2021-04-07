@@ -16,6 +16,8 @@
                     {% include 'components/news.html' %}
                 {% elif images_data_list %}
                     {% include 'components/images.html' %}
+                {% else %}
+                    {% include 'components/nodata.html' %}
                 {% endif %}
             </div>
         </div>

@@ -58,10 +58,13 @@ def get_city_news(city):
 
     response = requests.request("GET", url, headers=headers, params=querystring)
 
-
+    if response.status_code != 200:
+        return
 
     json_response = response.json()
 
+    if json_response['value'] == []:
+        return None
 
     news_data_list = []
     for i in range(0, 9):
@@ -95,8 +98,13 @@ def get_city_images(city):
 
     response = requests.request("GET", url, headers=headers, params=querystring)
 
+    if response.status_code != 200:
+        return
 
     json_response = response.json()
+
+    if json_response['value'] == []:
+        return None
 
     images_data_list = []
     for i in range(0, 9):
